@@ -220,6 +220,23 @@ funkyCounter1(0);
 
 Did you get that right?
 
+Your console should look like this.
+
+```
+Ready... Set... GO!!
+4
+...tic-tock
+3
+...tic-tock
+2
+...tic-tock
+1
+...tic-tock
+0
+```
+
+**That's probably not what you were expecting.**
+
 What about if I swap the order of the console.logs?
 
 ### So, what's THIS going to do then?
