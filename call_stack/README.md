@@ -115,13 +115,15 @@ Get icecream!
 
 When function `A` calls function `B`, `A` has to pause itself, then `B` runs, and whatever `B` returns, is returned back to where `A` was when it invoked it.
 
-i.e. If I was halway done cleaning my room when I started on the closet, I'll return back to being halfway done with the room when the closet is done.
+_i.e. If I was halway done cleaning my room when I started on the closet, I'll return back to being halfway done with the room when the closet is done._
 
-Look at the following code and try to answer these questions:
+**Look at the following code and try to answer these questions:**
 
   - What is the value of `n` inside `A`, inside `B` and inside `C`?
   - Which function returns first?
   - Where does it's return value go?
+
+### Think through this code
 
 ```javascript
 function A(n){
