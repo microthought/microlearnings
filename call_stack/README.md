@@ -255,8 +255,27 @@ function funkyCounter2(depth){
 
 funkyCounter2(0);
 ```
+Here's what shows up in the console:
+
+```
+0
+1
+2
+3
+4
+Ready... Set... GO!!
+...tic-tock
+...tic-tock
+...tic-tock
+...tic-tock
+```
+
+WHAT??
+
+**Read through the code carefully, step by step. Inner functions, or inner calls complete first. So it goes in, in, in, and then out, out, out**
 
 ### Key Questions
 
   1. What is the value of `depth` at EACH in call?
   2. When it returns from `depth` of 5, which level does it return to?
+  3. Then when it returns back to the previous call, aka, the previous depth, what runs next? (hint: picks up where it left off!)
