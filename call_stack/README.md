@@ -1,11 +1,10 @@
-# Call Stack
-## When Functions Call Functions
+# Call Stack - _When Functions Call Functions_
 
 If you start organizing your room, but then notice your closet is a mess, so you start organizing your closet, you might want to do the following three things:
 
 1. Pause cleaning the rest of the room
 2. Dive into the closet and focus your energy there
-3. When you're done, hopefully remember where you were with the rest of the room.
+3. When you're done, hopefully remember where you were with the rest of the room so you don't _start over_
 
 **Hooray!** You figured out the call stack.
 
