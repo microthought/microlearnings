@@ -58,7 +58,7 @@ Finish organizingRoom
 
 ### You're not done with the room until you're done with the closet
 
-Copy and paste this code somewhere like [repl.it](https://repl.it/languages/javascript).
+Copy and paste this code somewhere like [repl.it/languages/javascript](https://repl.it/languages/javascript).
 
 It's the same as before, now with `console.log`'s sprinkled throughout
 
@@ -105,7 +105,89 @@ done cleaning room
 Get icecream!
 ```
 
-1. You don't get icecream until you're DONE cleaning your room
-2. You're not done cleaning your room 'til you're done cleaning your closet
-3. You're not done cleaning your closet until your shoes are in order.
+1. **You don't get icecream until you're DONE cleaning your room**
+2. **You're not done cleaning your room 'til you're done cleaning your closet**
+3. **You're not done cleaning your closet until your shoes are in order**
 
+
+
+### Returning back where you were without forgetting
+
+When function `A` calls function `B`, `A` has to pause itself, then `B` runs, and whatever `B` returns, is returned back to where `A` was when it invoked it.
+
+i.e. If I was halway done cleaning my room when I started on the closet, I'll return back to being halfway done with the room when the closet is done.
+
+Look at the following code and try to answer these questions:
+
+  - What is the value of `n` inside `A`, inside `B` and inside `C`?
+  - Which function returns first?
+  - Where does it's return value go?
+
+```javascript
+function A(n){
+  var val = n + B(n+2);
+  return val;
+}
+
+function B(n){
+  var val = n + C(n+2);
+  return val;
+}
+
+function C(n){
+  var val = "hi!" + n;
+  return val;
+}
+
+A(5);
+```
+
+Try to predict what `A(5)` returns, then once you've got your guess, run it.
+
+### Run this code
+It's the same, just with some `console.log` help to visualize each step.
+
+```javascript
+function A(n){
+  console.log('start A. n =', n)
+  var val = n + B(n+2);
+  console.log('finish A. val =', val)
+  return val;
+}
+
+function B(n){
+  console.log('  start B. n=', n)
+  var val = n + C(n+2);
+  console.log('  finish B. val =', val)
+  return val;
+}
+
+function C(n){
+  console.log('    start C. n=', n)
+  var val = "hi!" + n;
+  console.log('    finish C. val =', val)
+  return val;
+}
+
+A(5);
+console.log('\nAll Done!');
+
+```
+
+You should see this in the console.
+
+```
+start A. n = 5
+
+  start B. n= 7
+
+    start C. n= 9
+
+    finish C. val = hi!9
+
+  finish B. val = 7hi!9
+
+finish A. val = 57hi!9
+
+All Done!
+```
