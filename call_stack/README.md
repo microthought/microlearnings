@@ -209,8 +209,8 @@ function funkyCounter1(depth){
     return "Ready... Set... GO!!"
   }
   
-  console.log(funkyCounter1(depth + 1)); // A
-  console.log(depth); //B
+  console.log(funkyCounter1(depth + 1)); // hint: recursion!
+  console.log(depth);
   
   return "...tic-tock";
 }
@@ -247,8 +247,8 @@ function funkyCounter2(depth){
     return "Ready... Set... GO!!"
   }
   
-  console.log(depth);  // B
-  console.log(funkyCounter2(depth + 1)); //A
+  console.log(depth); 
+  console.log(funkyCounter2(depth + 1)); // hint: recursion!
   
   return "...tic-tock";
 }
