@@ -217,11 +217,24 @@ function funkyCounter1(depth){
 
 funkyCounter1(0);
 ```
-
-
-
-
-
+Place your bets first...
+.  
+.  
+.  
+.  
+.  
+.  
+It's no fun if you just look ahead.
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
 Did you get that right?
 
 Your console should look like this.
