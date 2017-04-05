@@ -311,3 +311,33 @@ WHAT??
   1. What is the value of `depth` at EACH in call?
   2. When it returns from `depth` of 5, which level does it return to?
   3. Then when it returns back to the previous call, aka, the previous depth, what runs next? (hint: picks up where it left off!)
+  
+# Final Question
+ 
+**Can you modify one of the previous functions so that it produces the following console.log?**
+ 
+```
+ Dive dive dive! 0
+  Dive dive dive! 1
+   Dive dive dive! 2
+    Dive dive dive! 3
+     Dive dive dive! 4
+      Dive dive dive! 5
+       Dive dive dive! 6
+        Dive dive dive! 7
+         Dive dive dive! 8
+          Dive dive dive! 9
+           We hit rock bottom Captain!
+          Bubble up  9
+         Bubble up  8
+        Bubble up  7
+       Bubble up  6
+      Bubble up  5
+     Bubble up  4
+    Bubble up  3
+   Bubble up  2
+  Bubble up  1
+ Bubble up  0
+```
+ 
+ 
