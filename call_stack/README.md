@@ -1,5 +1,5 @@
-#Call Stack
-##When Functions Call Functions
+# Call Stack
+## When Functions Call Functions
 
 If you mean to organize your room, but once you get started, you realize you need to organize your closet you have to do three things:
 
@@ -12,19 +12,19 @@ Hooray! You figured out the call stack.
 Let's try it with functions.
 
 ```javascript
-var a = function(n){
+var organizeRoom = function(n){
   return 1 + b(n+2);
 }
 
-var b = function(n){
+var organizeCloset = function(n){
   return = 2 + c(n+2);
 }
 
-var c = function(n){
+var organizeShoes = function(n){
   return = "hi!" + n;
 }
 
-a(5);
+organizeRoom(); //Call it!
 ```
 
 
