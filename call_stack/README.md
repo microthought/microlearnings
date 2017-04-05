@@ -339,5 +339,5 @@ WHAT??
   Bubble up  1
  Bubble up  0
 ```
-(Let me know on twitter [(@michaelPThelen)](https://twitter.com/MichaelPThelen) if you can't figure it out or feel like shouting at me!)
+(Let me know on twitter [(@michaelpthelen)](https://twitter.com/MichaelPThelen) if you can't figure it out or feel like shouting at me!)
  
