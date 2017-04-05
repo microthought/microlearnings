@@ -260,22 +260,21 @@ function funkyCounter2(depth){
 funkyCounter2(0);
 ```
 No peaking...
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
 Serously, you thought through this right?
-
-
-
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
+.
 Ok, here's what shows up in the console:
 
 ```
