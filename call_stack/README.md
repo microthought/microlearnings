@@ -62,7 +62,7 @@ Copy and paste this code somewhere like [repl.it/languages/javascript](https://r
 
 It's the same as before, now with `console.log`'s sprinkled throughout
 
-### Predice the order of the logs, then run it!
+### Predict the order of the logs, then run it!
 
 ```javascript
 function organizeRoom(){
