@@ -57,4 +57,56 @@ Start organizingRoom
 Finish organizingRoom
 ```
 
+### You're not done with the room until you're done with the closet
+
+Copy and paste this code somewhere like [repl.it](https://repl.it/languages/javascript).
+
+It's the same as before, now with `console.log`'s sprinkled throughout
+
+```javascript
+function organizeRoom(){
+  console.log('start cleaning room');
+  organizeCloset();
+  console.log('done cleaning room');
+}
+
+function organizeCloset(){
+  console.log('  start cleaning closet');
+  organizeShoes();
+  console.log('  done cleaning closet');
+}
+
+function organizeShoes(){
+  console.log('   start cleaning shoes');
+  console.log("----> working on shoes");
+  console.log('   done cleaning shoes');
+}
+
+organizeRoom();
+console.log('Get icecream!');
+```
+
+**Does your console look like this?**
+
+```
+start cleaning room
+
+  start cleaning closet
+
+   start cleaning shoes
+
+----> working on shoes
+
+   done cleaning shoes
+
+  done cleaning closet
+
+done cleaning room
+
+Get icecream!
+```
+
+1. You don't get icecream until you're DONE cleaning your room
+2. You're not done cleaning your room 'til you're done cleaning your closet
+3. You're not done cleaning your closet until your shoes are in order.
 
