@@ -62,6 +62,8 @@ Copy and paste this code somewhere like [repl.it/languages/javascript](https://r
 
 It's the same as before, now with `console.log`'s sprinkled throughout
 
+### Predice the order of the logs, then run it!
+
 ```javascript
 function organizeRoom(){
   console.log('start cleaning room');
@@ -158,14 +160,14 @@ function A(n){
 }
 
 function B(n){
-  console.log('  start B. n=', n)
+  console.log('  start B. n =', n)
   var val = n + C(n+2);
   console.log('  finish B. val =', val)
   return val;
 }
 
 function C(n){
-  console.log('    start C. n=', n)
+  console.log('    start C. n =', n)
   var val = "hi!" + n;
   console.log('    finish C. val =', val)
   return val;
