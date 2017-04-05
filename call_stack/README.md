@@ -196,6 +196,9 @@ finish A. val = 57hi!9
 All Done!
 ```
 
+# Recursion - _When a function calls itself_
+So you got how an inner function runs first, and then returns back to the outer function that called it?
+
 ### Ok Hotshot, how about when it's recursive
 
 Easy? Fine. Then read this and predict what's going to happen, then check your prediction here [repl.it/languages/javascript](https://repl.it/languages/javascript).
