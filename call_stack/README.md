@@ -1,30 +1,30 @@
 # Call Stack
 ## When Functions Call Functions
 
-If you mean to organize your room, but once you get started, you realize you need to organize your closet you have to do three things:
+If you start organizing your room, but then notice your closet is a mess, so you start organizing your closet, you might want to do the following three things:
 
 1. Pause cleaning the rest of the room
-2. Dive into the closet and focuse your energy there
+2. Dive into the closet and focus your energy there
 3. When you're done, hopefully remember where you were with the rest of the room.
 
-Hooray! You figured out the call stack.
+**Hooray!** You figured out the call stack.
 
 Let's try it with functions.
 
 ```javascript
 var organizeRoom = function(n){
-  return 1 + b(n+2);
+  organizeCloset();
 }
 
 var organizeCloset = function(n){
-  return = 2 + c(n+2);
+  organizeShoes();
 }
 
 var organizeShoes = function(n){
-  return = "hi!" + n;
+  console.log("Putting shoes in order");
 }
 
-organizeRoom(); //Call it!
+organizeRoom(); // Don't forget to run your functions :D
 ```
 
 
