@@ -195,3 +195,48 @@ finish A. val = 57hi!9
 
 All Done!
 ```
+
+### Ok Hotshot, how about when it's recursive
+
+Easy? Fine. Then read this and predict what's going to happen, then check your prediction here [repl.it/languages/javascript](https://repl.it/languages/javascript).
+
+```javascript
+function funkyCounter1(depth){
+  if (depth === 5){
+    return "Ready... Set... GO!!"
+  }
+  
+  console.log(funkyCounter1(depth + 1)); // A
+  console.log(depth); //B
+  
+  return "...tic-tock";
+}
+
+funkyCounter1(0);
+```
+
+Did you get that right?
+
+What about if I swap the order of the console.logs?
+
+### So, what's THIS going to do then?
+
+```javascript
+function funkyCounter2(depth){
+  if (depth === 5){
+    return "Ready... Set... GO!!"
+  }
+  
+  console.log(depth);  // B
+  console.log(funkyCounter2(depth + 1)); //A
+  
+  return "...tic-tock";
+}
+
+funkyCounter2(0);
+```
+
+### Key Questions
+
+  1. What is the value of `depth` at EACH in call?
+  2. When it returns from `depth` of 5, which level does it return to?
