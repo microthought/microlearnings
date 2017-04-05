@@ -37,18 +37,23 @@ So you might be imagining the order of tasks like this
 ```
 organizeRoom -> organizeCloset -> organizeShoes
 ```
-In essence, do 'A' then do 'B' then do 'C', r
+In essence, do 'A' then do 'B' then do 'C'.
 
-Not quite...
+**Not quite...**
 
 It's nested, like the russian dolls.
 
 ```
 Start organizingRoom
-  Start organizingCloset
-    Start organizingShoes
-    Finish organizingShoes
-  Finish organizingCloset
+
+    Start organizingCloset
+
+      Start organizingShoes
+
+      Finish organizingShoes
+
+    Finish organizingCloset
+
 Finish organizingRoom
 ```
 
