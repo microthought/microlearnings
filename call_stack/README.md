@@ -12,19 +12,44 @@ If you start organizing your room, but then notice your closet is a mess, so you
 Let's try it with functions.
 
 ```javascript
-var organizeRoom = function(n){
+function organizeRoom(){
+  // other room cleaning
   organizeCloset();
 }
 
-var organizeCloset = function(n){
+function organizeCloset(){
+  // other closet stuff
   organizeShoes();
 }
 
-var organizeShoes = function(n){
+function organizeShoes(){
   console.log("Putting shoes in order");
 }
 
 organizeRoom(); // Don't forget to run your functions :D
+```
+
+Easy right? Start cleaning your room, then start cleaning the closet, then organize your shoes.
+
+### It's not straight forward, it's nested
+
+So you might be imagining the order of tasks like this
+```
+organizeRoom -> organizeCloset -> organizeShoes
+```
+In essence, do 'A' then do 'B' then do 'C', r
+
+Not quite...
+
+It's nested, like the russian dolls.
+
+```
+Start organizingRoom
+  Start organizingCloset
+    Start organizingShoes
+    Finish organizingShoes
+  Finish organizingCloset
+Finish organizingRoom
 ```
 
 
